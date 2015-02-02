@@ -1,0 +1,6 @@
+fpackage ets.genielog.appwatcher_3.profiling.core.model;
+
+message networkInfo {
+  required string name = 1;         /** interface name */
+  required uint32 flags = 2;      /** status flag */
+}

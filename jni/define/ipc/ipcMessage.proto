@@ -1,0 +1,25 @@
+package ets.genielog.appwatcher_3.profiling.core.ipc;
+
+enum ipcAction {
+  OS = 1;             /** OS */
+  CPU = 2;            /** CPU */
+  PROCESS = 3;        /** Process */
+  NETWORK = 4;        /** Network */
+  KILLPROCESS = 5;   /** Kill Processes */
+}
+
+message ipcData {
+  required ipcAction action = 1;
+  repeated bytes payload = 2;
+}
+  
+message ipcMessage {
+  enum ipcType {
+    ACTION = 0;         /** ACTION */
+    RESULT = 1;         /** RESULT */
+    COMMAND = 2;		/** COMMAND */
+    EXIT = 10;			/** EXIT */
+  } 
+  required ipcType type = 1 [default = ACTION];
+  repeated ipcData data = 2;
+}

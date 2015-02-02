@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppWatcher</string>
+    <string name="service_name">AppWatcher monitor service</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="button_scan">Scan Apk</string>
+    <string name="button_modelise">Modelise Apk</string>
+    <string name="button_activity_modelise_done">Back to main menu</string>
+    <string name="button_activity_modelise_starttrace">Start tracing</string>
+    <string name="button_activity_modelise_stoptrace">Stop tracing</string>
+    <string name="button_activity_modelise_update">Update current model</string>
+    <string name="button_activity_modelise_new">Create new model</string>
+    <string name="button_activity_scan_done">Back to main menu</string>
+    <string name="button_activity_scan_go">Scan Application !</string>
+    <string name="button_bench">Run prewritten code</string>
+    
+    
+    <string name="no_app_selected"> You need to select an application first.</string>
+
+    <string name="scan_activity_msg"> Scan application</string>
+    
+    <string name="modelise_activity_msg"> Modelise application</string>
+    <string name="modelise_activity_trace_proc"> Trace making in progress..</string>
+    <string name="modelise_activity_trace_ok"> Trace Made</string>
+    <string name="modelise_activity_model_already"> A model already exists.</string>
+    <string name="modelise_activity_model_nomodel"> No current model.</string>
+    <string name="modelise_activity_model_replace"> Model is being replaced.</string>
+    <string name="modelise_activity_model_update"> Model is being updated.</string>
+    <string name="modelise_activity_model_ok"> Model made</string>
+    
+    <string name="dialog_run_app"> Please run the application.</string>
+    <string name="dialog_no_model"> Can\'t scan the application: no model available.</string>
+    <string name="ModelType_prompt">Choose a Model</string> 
+    <string-array name="ModelType_arrays">
+        <item>Lookahead</item>
+        <item>Tree</item>
+        <item>V.L.N-grams</item>
+        <item>HMM</item>
+        <item>Alex</item>
+    </string-array>
+    
+        <string name="Ngram_prompt">N-gram</string> 
+    <string-array name="Ngram_arrays">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    
+        <string name="ThresholdNgram_prompt">Threshold</string> 
+    <string-array name="ThresholdNgram_arrays">
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+    </string-array>
+    
+       <string name="TotalTHreshold">Enter a Threshold</string>
+       <string name="TraceSize">Size of trace</string>
+        <string name="NbrTraces">Number of traces</string>
+</resources>

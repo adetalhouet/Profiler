@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/modelise_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modelise_activity_msg" />
+
+    <TextView
+        android:id="@+id/trace_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/button_activity_modelise_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity_modelise_done" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"        
+        android:orientation="horizontal" >
+
+             <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/TraceSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/TraceSize"
+    android:inputType="number" />
+
+             <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/NbrTraces"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/NbrTraces"
+    android:inputType="number" />
+
+    </LinearLayout>
+    
+        <Button
+            android:id="@+id/button_activity_modelise_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_activity_modelise_starttrace"
+             />
+
+    <TextView
+        android:id="@+id/model_state"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="17dp"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/ModelType"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/ModelType_arrays"
+            android:prompt="@string/ModelType_prompt" />
+
+        <Spinner
+            android:id="@+id/Ngram"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Ngram_arrays"
+            android:prompt="@string/Ngram_prompt" />
+        
+         <Spinner
+             android:id="@+id/ThresholdNgram"
+             android:layout_width="78dp"
+             android:layout_height="wrap_content"
+             android:entries="@array/ThresholdNgram_arrays"
+             android:prompt="@string/ThresholdNgram_prompt" />
+
+
+    </LinearLayout>
+
+             <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/ThresholdTotal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/TotalTHreshold"
+    android:inputType="numberDecimal" />
+             
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_activity_modelise_new"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_activity_modelise_new"
+             />
+
+        <Button
+            android:id="@+id/button_activity_modelise_update"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_activity_modelise_update"
+             />
+    </LinearLayout>
+
+</LinearLayout>

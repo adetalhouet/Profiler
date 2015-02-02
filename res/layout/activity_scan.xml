@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scan_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_activity_msg" />
+
+    <TextView
+        android:id="@+id/scan_activity_trace_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/scan_activity_model_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/button_activity_scan_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity_scan_done" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"        
+        android:orientation="horizontal" >
+
+             <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/TraceSize_scan_trace"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/TraceSize"
+    android:inputType="number" />
+
+             <EditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/NbrTraces_scan_trace"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/NbrTraces"
+    android:inputType="number" />
+
+    </LinearLayout>
+     <Button
+        android:id="@+id/button_activity_scan_trace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity_modelise_starttrace" />
+
+
+</LinearLayout>

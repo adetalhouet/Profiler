@@ -1,0 +1,13 @@
+package ets.genielog.appwatcher_3.profiling.core.model;
+
+message processInfo {
+  required string name = 1;      		/** process name */
+  required uint32 uid = 2;            	/** process uid */
+  required uint32 pid = 3;       		/** process pid */
+  required float  cpuUsage = 4;  		/** CPU usage */
+  required uint64 cpuTime = 5;   		/** CPU time */
+  required uint32 priorityLevel = 6; 	/** priority from -20 to 20 */
+  required uint64 usedUserTime = 7;  	/** used user time (user mode) */
+  required uint64 usedSystemTime = 8; 	/** used system time (kernel mode) */
+  required uint64 rss = 9;            	/**	 resident set size */
+}
